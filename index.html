@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joon Ho · Portfolio</title>
+  <meta name="description" content="Projects, skills and experience of Joon Ho.">
+  <meta property="og:title" content="Joon Ho · Portfolio">
+  <meta property="og:description" content="Selected works and skills.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <a class="brand" href="#">Joon Ho</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a class="btn" href="mailto:you@email.com">Contact</a>
+    </nav>
+    <section class="hero">
+      <h1>Building reliable web experiences</h1>
+      <p>HTML-centric portfolio showcasing selected projects and impact.</p>
+      <a class="btn" href="assets/docs/resume.pdf">Download Resume</a>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="card">
+        <img src="assets/images/sample.webp" alt="프로젝트 썸네일">
+        <div>
+          <h3>Project A</h3>
+          <p>문제 → 해결 → 성과(예: 로딩 45% 단축, 전환율 +12%).</p>
+          <p class="meta">Role: Frontend · Stack: HTML/CSS</p>
+          <p><a href="#" target="_blank">GitHub</a> · <a href="#" target="_blank">Live</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="badges">
+        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Git/GitHub</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>간단한 경력 요약과 가치관, 강점 3가지.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© 2025 Joon Ho. Last updated: 2025-08-29</small>
+  </footer>
+</body>
+</html>
+css
+코드 복사
+/* css/style.css (요약) */
+:root { --bg:#0b0c10; --fg:#e5e7eb; --muted:#94a3b8; --accent:#3b82f6; }
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,Segoe UI,Roboto,Apple Color Emoji}
+.container{max-width:1000px;margin:auto;padding:24px}
+nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+nav a{color:var(--fg);text-decoration:none}
+.brand{font-weight:700}
+.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px}
+.hero{padding:64px 0}
+h1{font-size:40px;margin:0 0 12px} h2{margin:40px 0 16px}
+.card{display:grid;grid-template-columns:200px 1fr;gap:16px;background:#111827;padding:16px;border-radius:12px}
+.card img{width:100%;height:auto;border-radius:8px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.badges li{background:#111827;padding:6px 10px;border-radius:999px}
+@media (max-width:720px){ .card{grid-template-columns:1fr} h1{font-size:32px}}
